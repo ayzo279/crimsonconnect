@@ -1,9 +1,7 @@
 # Application Setup
 To run the application locally, first create and enter a virtual environment. 
 Next, install necessary dependencies from the cs50 library with the following command.
-    ```
-    pip install cs50
-    ```
+      pip install cs50
 
 While in the virtual environment and with dependencies installed, ensure you are in the project directory.
 Run 'flask run' in the terminal. Clicking the subsequenturl will then direct you to a local version of Crimson Connect. 
@@ -18,4 +16,5 @@ On the homepage, there is a button labeled 'Match Me!', which upon clicking, wil
 # Demo
 Youtube URL:
 https://www.youtube.com/watch?v=ZvtBp_b11dM&ab_channel=AndyZhuo
+
 
