@@ -1,6 +1,7 @@
 # Application Setup
 To run the application locally, first create and enter a virtual environment. 
 Next, install necessary dependencies from the cs50 library with the following command.
+
       pip install cs50
 
 While in the virtual environment and with dependencies installed, ensure you are in the project directory.
