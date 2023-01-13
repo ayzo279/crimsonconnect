@@ -4,7 +4,7 @@ Next, install necessary dependencies from the cs50 library with the following co
 
       pip install cs50
 
-While in the virtual environment and with dependencies installed, ensure you are in the project directory.
+While in the virtual environment and with dependencies installed, ensure you are in the `crimsonconnect` directory.
 Run 'flask run' in the terminal. Clicking the subsequenturl will then direct you to a local version of Crimson Connect. 
 
 # Using the App
