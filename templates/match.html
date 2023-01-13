@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Match
+{% endblock %}
+
+{% block main %}
+    <div class=match-header>
+        <p style="font-size: 50px">Matches Found<p>
+    </div>
+    <div id="match-table">
+        <table>
+            <tr style="font-size: 20px">
+                <th>User</th>
+                <th>Number of Things in Common</th>
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
+            </tr>
+            {% for i in range(3) %}
+            {% for j in range(3) %}
+            <tr>
+                {% if user[j][i] is defined %}
+                <td style="text-align: left"><h7 style="font-size: 28px">{{user[j][i].first_name}} {{user[j][i].last_name}}</h7><br>{{user[j][i].class}}<br>{{user[j][i].hometown}},{{user[j][i].state}}</td>
+                <td style="font-size: 25px">{{matches[j]}}</td>
+                <td>
+                    <form action="/profile" method="post"><button type="submit" class="matched-btn" name="user_id" value="{{user[j][i].user_id}}">View&nbsp;Profile</button></form>
+                </td>
+                <td>
+                    <form action="/saveprofile" method="post"><button type="submit" class="matched-btn" name="user_id" value="{{user[j][i].user_id}}">Save</button></form>
+                </td>
+                {% endif %}
+            </tr>
+            {% endfor %}
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}

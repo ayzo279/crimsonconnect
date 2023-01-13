@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Settings
+{% endblock %}
+
+{% block main %}
+
+    <h4 style="font-size: 40px">Settings</h4>
+    <div>
+        <h5>Change Profile Picture</h5>
+        <form class="setting-form" method="post" enctype="multipart/form-data" action="/settings">
+          <input type="file" class="setting-file" name="file" id="file">
+          <input type="submit" class="setting-input" value="Upload" name="submit">
+        </form>
+        <hr color="white">
+        <h5>Update Bio</h5>
+        <form class="setting-form" method="post" action="/bio">
+            <input type="text" maxlength="150" name="bio" class="setting-bio" placeholder="150 characters max">
+            <input type="submit" class="setting-input" value="Update" name="submit">
+        </form>
+    </div>
+{% endblock %}

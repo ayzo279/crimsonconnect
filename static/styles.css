@@ -1,0 +1,425 @@
+.body
+{
+    background-color: #151515;
+    font-family: "Helvetica Neue", sans-serif;
+    color: #f5f5f5;
+}
+
+.btn-primary, .btn-primary:active, .btn-primary:visited
+{
+    background-color: #a71e32 !important;
+    border-color: #a71e32 !important;
+}
+
+.dropdown-toggle::after
+{
+    display: none !important;
+}
+
+.bordered
+{
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #a71e32;
+}
+
+.dropdownfit
+{
+    min-width: 1rem;
+}
+
+.navbar
+{
+    background-color: #1f1f1f;
+    white-space: nowrap;
+}
+
+.navbar a, .navbar button
+{
+    color: #a71e32;
+}
+
+.navbar a:hover, .btn-group button:hover
+{
+    color: #851828;
+    text-decoration: none;
+}
+
+h2 a, h2 a:hover
+{
+  color: #a71e32;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+h1, h2
+{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 30px;
+}
+
+.hover:hover
+{
+    background-color: #545454 !important;
+    text-decoration: none;
+}
+
+.nav-ul
+{
+    padding: 10px;
+    list-style: none;
+}
+
+nav li
+{
+    margin: 0 25px 15px 25px;
+    font-size: 30px;
+}
+
+.dropdownfit
+{
+    min-width: 1rem !important;
+}
+
+img.resize
+{
+    max-width: 20rem;
+    max-height: 20rem;
+    margin-left: 30px;
+}
+
+img.resize2
+{
+    max-width: 27.5%;
+    max-height: 40%;
+    margin-left: 30px;
+}
+
+main .form-control
+{
+    /* Center form controls */
+    display: inline-block;
+
+    /* Override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main
+{
+    /* Scroll horizontally as needed */
+    overflow-x: auto;
+    /* Center contents */
+    text-align: center;
+}
+
+main img
+{
+    /* Constrain images on small screens */
+    max-width: 100%;
+}
+
+/* Style the form */
+#regForm {
+  background-color: #a71e32;
+  margin: 0px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+  border-radius: 25px;
+  border: 2px solid #a71e32;
+}
+
+/* Style the input fields */
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+
+select
+{
+    padding: 5px;
+    margin: 0 10px;
+}
+
+#clear
+{
+    background-color: transparent;
+}
+
+.desc, .desc:focus
+{
+    width: 300px !important;
+    height: 35px !important;
+}
+
+.fav
+{
+    margin-top: 10px;
+}
+
+.matchme
+{
+    margin-top: 200px;
+    background-color: #a71e32;
+    color: white;
+    border-radius: 25px;
+    border: 2px solid #a71e32;
+    text-align: center;
+    font-size: 50px;
+    padding: 10px 20px;
+}
+
+.profile-img
+{
+    float: left;
+    width: 300px;
+    height: 200px;
+}
+
+.profile-img img
+{
+    border-radius: 50%;
+    height: 220px;
+    width: 220px;
+    border: 5px solid #851828;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    z-index: 5;
+    background: white;
+}
+
+.profile-nav-info
+{
+    padding-top: 40px;
+}
+
+.profile-nav-info h3
+{
+    font-variant: small-caps;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.main-bd
+{
+    width: 100%;
+    display: flex;
+    padding-right: 15px;
+}
+
+.profile-header
+{
+    background: #a71e32;
+    width: 1017px;
+    display: flex;
+    height: 150px;
+    position: relative;
+}
+
+.profile-side
+{
+    width: 248px;
+    background-color: #1f1f1f;
+    border: 2px solid #851828;
+    border-radius: 0 0 5px 5px;
+    padding: 100px 0 100px;
+    position: relative;
+    left: 15px;
+}
+
+.profile-side p
+{
+    margin-bottom: 7px;
+    color: white;
+    font-size: 14px;
+}
+
+.profile-btn
+{
+    display: flex;
+}
+
+.profile-nav
+{
+    width: 100%;
+    z-index: -1;;
+    height: 40px;
+}
+
+.profile-nav-ul
+{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    height: 40px;
+    width: 784px;
+    background: #851828;
+}
+
+.profile-nav-ul li
+{
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    transition: all .2s ease-in-out;
+    font-weight: bold;
+}
+
+.profile-nav-ul li.active, .profile-nav ul li:hover
+{
+    box-shadow: 0px -3px 0px rgba(216, 38, 64, .9) inset;
+}
+
+
+.tabcontent
+{
+    background-color: #1f1f1f;
+    border-radius: 0 0 25px 25px;
+    border: 2px solid #1f1f1f;
+    margin-top: 0;
+    display: inline-block;
+    height: 160%;
+    max-width: 784px;
+}
+
+#Harvard table
+{
+    margin: 50px auto 50px auto;
+    font-size: 25px;
+}
+
+#Favorites table
+{
+    margin: 30px auto 30px auto;
+    font-size: 15px;
+}
+
+#Interests table
+{
+    border-top: 2px solid #851828;
+    margin: 40px auto 40px auto;
+    font-size: 20px;
+}
+
+#Harvard th
+{
+    color: #851828;
+}
+
+#Harvard tr, #Harvard td, #Harvard th
+{
+    padding: 20px 30px;
+    border-top: 2px solid #851828;
+    border-bottom: 2px solid #851828;
+}
+
+#Favorites tr, #Favorites td, #Favorites th
+{
+    padding: 10px 80px;
+}
+
+#Favorites tr:nth-child(3n)
+{
+    border-bottom: 2px solid #851828;
+}
+
+#Favorites tr:nth-child(1)
+{
+    border-top: 2px solid #851828;
+}
+
+#Interests th
+{
+    padding: 10px 80px;
+    text-decoration: underline 7px #851828;
+}
+
+#match-table table
+{
+    margin: 50px auto 50px auto;
+    border: 3px solid #a71e32;
+}
+
+#match-table tr, #match-table td, #match-table th
+{
+    padding: 10px 40px;
+    border-bottom: 3px solid #a71e32;
+}
+
+.matched-btn
+{
+    background-color: #a71e32;
+    color: white;
+    border-radius: 25px;
+    border: 2px solid #a71e32;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+h5, .setting-form
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.setting-file
+{
+    border-radius: 5px;
+    border: 2px solid #2a2a2a;
+    width: 30%;
+    background-color: #2a2a2a;
+}
+
+.setting-bio
+{
+    border-radius: 5px;
+    border: 2px solid #2a2a2a;
+    width: 50%;
+    background-color: #2a2a2a;
+}
+
+.setting-input
+{
+    margin-left: 10px;
+    width: 20%;
+    background-color: #a71e32;
+    border-radius: 5px;
+    border: 2px solid #a71e32;
+}
